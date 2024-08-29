@@ -1,0 +1,248 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #F4FAFB;
+            color: #333;
+        }
+        header {
+            background: #F4FAFB;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+        .col-md-2 d-none d-md-block{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #3C425A;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #F4FAFB;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background: #3C425A;
+        }
+        nav a {
+            background: #3C425A;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #3C425A;
+        }
+        .content {
+            background: #fff;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content h2 {
+            margin-top: 0;
+            color: #CD613F;
+        }
+        .content p {
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+        .footer {
+            background: #CD613F;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%px; 
+        }
+        .rounded-circle {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 20px auto;
+            border-radius: 50%;
+            display: block;
+        }
+        .my-5 {
+            margin: 40px 0;
+        }
+        .row {
+             background: #F4FAFB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-md-6 {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        
+/*PAGE DE CONTACT*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    color: #000;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 150px;
+}
+
+.form-buttons {
+    display: flex;
+}
+
+form input[type="submit"] {
+    width: 20%;
+    background-color: #CD613F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9290C3;
+}
+
+/*PAGE CREATIONS*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenu {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenu h2{
+    color: #000;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+    background-color:#335F8A;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin:1%;
+    text-align: center;
+}
+
+.card img{
+    height: 280px;
+}
+
+.card-body {
+    flex-grow: 1;
+  }
+
+.card .btn{
+    background-color:#CD613F;
+    border-color:#CD613F;
+}
+
+/*FORMULAIRE D'AJOUT D'ARTICLES*/
+#formajout {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1%;
+    color: #000000;
+    text-decoration: none;
+    /*Contour du formulaire*/
+    padding: 1em;
+    border: 1px solid #000000;
+    border-radius: 1em;
+    margin-right: 25px;
+}
+
+#formajout ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#formajout label {
+    margin-bottom: 5px;
+}
+
+#formajout input[type="text"],
+#formajout input[type="number"],
+#formajout input[type="file"],
+#formajout textarea {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#formajout textarea {
+    height: 150px;
+}
+
+#formajout button {
+    display: flex;
+}
+
+#formajout button[type="submit"] {
+    width: 20%;
+    background-color: #1b1a55;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formajout form button[type="submit"]:hover {
+    background-color: #9290C3;
+}
