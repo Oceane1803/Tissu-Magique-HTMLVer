@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $servername = "localhost";
-$username_db = "root";
+$username_db = "u221411775_user";
 $password_db = "/F2xK95wf7@c";
-$dbname = "utilisateurs_db";
+$dbname = "u221411775_dbtissumagique";
 
 // Connexion à la base de données
 $conn = new mysqli($servername, $username_db, $password_db, $dbname);
@@ -19,6 +19,8 @@ if ($conn->connect_error) {
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+
+echo $username;
 
 if (empty($username) || empty($email) || empty($password)) {
     die("Tous les champs sont obligatoires.");

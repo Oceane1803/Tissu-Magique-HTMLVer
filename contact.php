@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tissu magique</title>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="components/carousel/carousel.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="style.css" rel="stylesheet">
-</head>
+<?php include 'header.php'; ?> 
 <body>
     <div class="container fondContainer">
         <header class="row">
@@ -17,27 +9,8 @@
             </div>
         </header>
         
-         <div class="row">
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                     <a class="navbar-brand" href="index.html">
-                        Accueil
-                    </a>
-                    <a class="navbar-brand" href="creations.php">
-                        Créations
-                    </a>
-                    <a class="navbar-brand" href="APropos.html">
-                        A propos
-                    </a>
-                     <a class="navbar-brand" href="contact.php">
-                        Contact
-                    </a>
-                    <a class="navbar-brand" href="connexion.html">
-                        Connexion
-                    </a>
-                </div>
-            </nav>
-        </div>
+         <!-- Barre de navigation responsive -->
+        <?php include 'navbar.html'; ?>
         
         <div class="containerA">
             <h1>Nous contacter:</h1>
@@ -56,10 +29,8 @@
                 </div>
             </form>
         </div>
-
-        <footer class="footer">
-            <p>&copy; Tissu Magique 2024</p>
-        </footer>
     </div>
+        <!-- Footer -->
+        <?php include 'footer.html'; ?>
 </body>
 </html>

@@ -26,9 +26,9 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
-            background: #3C425A;
+            background-color: #F4FAFB;
         }
-        .containerpres {
+        .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
@@ -76,7 +76,17 @@
             text-align: center;
             padding: 20px;
             margin-top: 20px;
-            width: 100%px; 
+            width: 100px; 
+        }
+        /* Couleur des liens par défaut (blanc) */
+        footer.footer a {
+            color: white;
+            text-decoration: none; /* Optionnel : enlève le soulignement */
+        }
+
+        /* Couleur des liens quand la souris passe dessus (noir) */
+        footer.footer a:hover {
+            color: black;
         }
         .rounded-circle {
             width: 250px;
@@ -100,7 +110,69 @@
             max-width: 50%;
             padding: 20px;
         }
+        .fondContainer {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
 
+        header img {
+            width: 100%;
+            max-width: 150px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        footer.footer {
+    background-color: #CD613F;
+    padding: 20px 0; 
+    text-align: center;
+    width: 100%;
+    position: relative; 
+    bottom: 0; 
+}
+
+
+        @media (max-width: 768px) {
+            .card-img-top {
+                max-height: 200px;
+            }
+        }
+
+        /* Ajustements pour mobile */
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1rem;
+            }
+
+            .card-body h5 {
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
         
 /*PAGE DE CONTACT*/
 form {
@@ -155,7 +227,7 @@ form input[type="submit"]:hover {
 }
 
 .contenu {
-    background: #fff;
+    background: #F4FAFB;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -168,7 +240,7 @@ form input[type="submit"]:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.card{
+.cardcrea{
     background-color:#335F8A;
     height: 100%;
     display: flex;
@@ -177,15 +249,15 @@ form input[type="submit"]:hover {
     text-align: center;
 }
 
-.card img{
+.cardcrea img{
     height: 280px;
 }
 
-.card-body {
+.cardcrea .card-body {
     flex-grow: 1;
   }
 
-.card .btn{
+.cardcrea .card .btn{
     background-color:#CD613F;
     border-color:#CD613F;
 }
@@ -246,3 +318,25 @@ form input[type="submit"]:hover {
 #formajout form button[type="submit"]:hover {
     background-color: #9290C3;
 }
+
+        .fondContainer {
+            min-height: calc(100vh - 80px); /* Réserve de l'espace pour le footer */
+            display: flex;
+            flex-direction: column;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-size: 14px;
+        }
+        /* Amélioration des boutons */
+        .btn-primary, .btn-success {
+            width: 200px;
+            margin: 10px;
+        }

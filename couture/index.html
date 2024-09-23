@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tissu Magique</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* Ajout de styles personnalisés pour améliorer le visuel */
+        .fondContainer {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 150px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .card-img-top {
+                max-height: 200px;
+            }
+        }
+
+        /* Ajustements pour mobile */
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1rem;
+            }
+
+            .card-body h5 {
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container fondContainer">
+        <header class="row">
+            <div class="col-md-2 d-none d-md-block">
+                <img src="logo.png" alt="Logo Tissu Magique">
+            </div>
+        </header>
+
+        <!-- Barre de navigation responsive -->
+        <?php include 'navbar.html'; ?>
+
+        <!-- Nouveautés section -->
+        <div class="container">
+            <div id="Nouveautes" class="content">
+                <h2>Nouveautés</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Robe.jpeg" class="card-img-top" alt="Robe années 50">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Robe années 50</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Veste_cotelée.jpeg" class="card-img-top" alt="Veste côtelée">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Veste côtelée</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Veste_jean.jpeg" class="card-img-top" alt="Veste en jean">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Veste en jean</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Robe jean.jpeg" class="card-img-top" alt="Robe en jean">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Robe en jean</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coups de cœur section -->
+            <div id="coeur" class="content">
+                <h2>Coups de cœur</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Robe.jpeg" class="card-img-top" alt="Robe années 50">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Robe années 50</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Alexzandre.png" class="card-img-top" alt="Veste côtelée">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Alexzandre</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Veste_jean.jpeg" class="card-img-top" alt="Veste en jean">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Veste en jean</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/Robe jean.jpeg" style="height:18rem;" class="card-img-top" alt="Robe en jean">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Robe en jean</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; Tissu Magique 2024</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
