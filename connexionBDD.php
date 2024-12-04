@@ -1,6 +1,16 @@
 <?php
     $host = "localhost";
-    $BD = "u221411775_dbtissumagique";
-    $user = "u221411775_user";
-    $pwd = "/F2xK95wf7@c";
+    $BD = "u132254256_tissumagique";
+    $user = "u132254256_user";
+    $pwd = "Decembre2004!";
+    
+    try {
+    // Connexion à la base de données avec PDO
+    $pdo = new PDO("mysql:host=$host;dbname=$BD", $user, $pwd);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    // Affichage de l'erreur si la connexion échoue
+    echo "Erreur de connexion à la base de données : " . $e->getMessage();
+    exit;
+}
 ?>

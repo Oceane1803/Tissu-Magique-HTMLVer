@@ -23,7 +23,7 @@
 
                     <div class="col-md-3 col-sm-6">
                         <div class="card">
-                            <img src="Veste_cotelée.jpeg" class="card-img-top" alt="Veste côtelée">
+                            <img src="Veste.jpeg" class="card-img-top" alt="Veste côtelée">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Veste côtelée</h5>
                             </div>
@@ -32,18 +32,18 @@
 
                     <div class="col-md-3 col-sm-6">
                         <div class="card">
-                            <img src="Veste_jean.jpeg" class="card-img-top" alt="Veste en jean">
+                            <img src="Veste_epaisse.jpeg" class="card-img-top" alt="Veste d'hiver">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Veste en jean</h5>
+                                <h5 class="card-title text-center">Veste d'hiver</h5>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-3 col-sm-6">
                         <div class="card">
-                            <img src="Robe jean.jpeg" class="card-img-top" alt="Robe en jean">
+                            <img src="Robe_enfant.jpeg" class="card-img-top" alt="Robe enfant">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Robe en jean</h5>
+                                <h5 class="card-title text-center">Robe enfant</h5>
                             </div>
                         </div>
                     </div>
@@ -65,27 +65,27 @@
 
                     <div class="col-md-3 col-sm-6">
                         <div class="card">
-                            <img src="Alexzandre.png" class="card-img-top" alt="Veste côtelée">
+                            <img src="Veste.jpeg" class="card-img-top" alt="Veste côtelée">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Alexzandre</h5>
+                                <h5 class="card-title text-center">Veste côtelée</h5>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-3 col-sm-6">
                         <div class="card">
-                            <img src="Veste_jean.jpeg" class="card-img-top" alt="Veste en jean">
+                            <img src="Bob.jpeg" class="card-img-top" alt="Bob rose">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Veste en jean</h5>
+                                <h5 class="card-title text-center">Bob rose</h5>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-3 col-sm-6">
                         <div class="card">
-                            <img src="Robe jean.jpeg" style="height:18rem;" class="card-img-top" alt="Robe en jean">
+                            <img src="Sac.jpeg" class="card-img-top" alt="Sac à main">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Robe en jean</h5>
+                                <h5 class="card-title text-center">Sac à main</h5>
                             </div>
                         </div>
                     </div>

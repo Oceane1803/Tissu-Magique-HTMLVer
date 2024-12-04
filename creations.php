@@ -10,7 +10,7 @@
             $ajout->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             // Récupérer les données de la table creations
-            $query = $ajout->prepare("SELECT * FROM Article");
+            $query = $ajout->prepare("SELECT * FROM articles");
             $query->execute();
             $articles = $query->fetchAll(PDO::FETCH_ASSOC);
         }
@@ -32,11 +32,10 @@
                     <?php foreach ($articles as $article): ?>
                         <div class="col-md-3">
                             <div class="card" id="cardcrea">
-                            <img src=<?php echo htmlspecialchars($article['Image']); ?> class="card-img-top" alt="Robe">
+                            <img src=<?php echo htmlspecialchars($article['image']); ?> class="card-img-top" alt="Robe">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo htmlspecialchars($article['NomA']); ?></h5>
-                                    <p class="card-text">Taille: <?php echo htmlspecialchars($article['Taille']); ?> <br> Prix: <?php echo htmlspecialchars($article['PrixUnitaire']); ?>€</p>
-                                    <p class="card-text">Détails: <?php echo htmlspecialchars($article['Description']); ?></p>
+                                    <h5 class="card-title"><?php echo htmlspecialchars($article['titre']); ?></h5>
+                                    <p class="card-text">Taille: <?php echo htmlspecialchars($article['Taille']); ?> <br> Prix: <?php echo htmlspecialchars($article['Prix']); ?>€</p>
                                     <form action="#" method="GET">
                                         <input id="prodId" name="prodId" type="hidden" value=<?php echo htmlspecialchars($article['Reference']); ?>/>
                                     <!--<input type="submit" class="btn btn-primary" value="Voir">-->
